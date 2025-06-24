@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>Fun Web App</h1>
+    <nav>
+      <a href="#quiz">Quiz</a>
+      <a href="#api">Joke API</a>
+    </nav>
+  </header>
+
+  <main class="grid-container">
+
+    <!-- QUIZ SECTION -->
+
+    <section id="quiz" class="quiz-section">
+      <h2>Quiz</h2>
+      <div id="questionBox">
+        <p id="questionText"></p>
+        <div id="answers"></div>
+        <p id="quizResult"></p>
+      </div>
+      <button onclick="nextQuestion()">Next</button>
+    </section>
+
+    <!-- API SECTION -->
+
+    <section id="api" class="api-section">
+      <h2>Random Joke</h2>
+      <p id="joke">Click the button to load a joke!</p>
+      <button onclick="getJoke()">Get Joke</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
